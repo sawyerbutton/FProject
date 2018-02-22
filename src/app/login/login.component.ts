@@ -23,9 +23,18 @@ export class LoginComponent implements OnInit {
 	}
 
 	login() {
-		this.router.navigateByUrl("workspace");
+		this.router.navigateByUrl('workspace');
 	}
+
+	sysLogin() {
+	  this.router.navigateByUrl('sysLogin');
+  }
+
+  nonSysLogin() {
+	  this.router.navigateByUrl('nonSysLogin');
+  }
+
 	forgetPwd() {
-		
+
 	}
 }
