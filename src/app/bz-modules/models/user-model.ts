@@ -7,4 +7,7 @@ export class User {
     email: string;
     confirmPassword: string;
     vcode:string;
+    communityMember: boolean;
+    socialMember: boolean;
+    admin: boolean;
 }
