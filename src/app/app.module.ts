@@ -11,7 +11,9 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { appRoutes } from './app.routes';
 import { SysLoginComponent } from './login/sys-login/sys-login.component';
-import { NonSysLoginComponent } from './login/non-sys-login/non-sys-login.component';
+import { BhcoComponent } from './login/non-sys-login/index';
+import { ComMemberComponent } from './login/non-sys-login/index';
+import { ForgetPwdComponent } from './login/forget-pwd/forget-pwd.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, './assets/i18n', '.json');
@@ -22,7 +24,9 @@ export function createTranslateLoader(http: Http) {
     AppComponent,
     LoginComponent,
     SysLoginComponent,
-    NonSysLoginComponent
+    BhcoComponent,
+    ComMemberComponent,
+    ForgetPwdComponent
   ],
   imports: [
     SharedModule,
