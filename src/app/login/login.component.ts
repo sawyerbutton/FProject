@@ -30,11 +30,12 @@ export class LoginComponent implements OnInit {
 	  this.router.navigateByUrl('sysLogin');
   }
 
-  nonSysLogin() {
-	  this.router.navigateByUrl('nonSysLogin');
+  bhcoLogin() {
+	  this.router.navigateByUrl('bhcoLogin');
   }
 
-	forgetPwd() {
+  cmemberLogin() {
+	  this.router.navigateByUrl('cmemberLogin')
+  }
 
-	}
 }
