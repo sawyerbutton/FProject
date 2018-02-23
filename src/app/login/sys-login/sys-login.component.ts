@@ -9,7 +9,7 @@ import {User} from '../../bz-modules/models/user-model';
   styleUrls: ['./sys-login.component.scss']
 })
 export class SysLoginComponent implements OnInit {
-
+  private role: any = " System Admin ";
   public user: User = new User();
 
   constructor(
@@ -28,7 +28,7 @@ export class SysLoginComponent implements OnInit {
   }
 
   forgetPwd() {
-
+    this.router.navigateByUrl('forgetPwd')
   }
 
   back() {
