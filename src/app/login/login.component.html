@@ -4,15 +4,13 @@
             <div class="login-form-container">
                 <h3 class="center-block sys-title">FOCUS - Pittsburgh</h3>
                 <form #form="ngForm" (ngSubmit)="form.form.valid" novalidate class="form-horizontal" role="form">
-
-                    <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button type="button" class="btn btn-success" (click)="sysLogin()">System Admin</button>
-                            <button type="button" class="btn btn-success" (click)="nonSysLogin()">Social Worker</button>
-                            <button type="button" class="btn btn-success" (click)="nonSysLogin()">Community Member</button>
-                        </div>
+                  <div class="buttonGroup">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                      <button type="button" class="btn btn-danger btn-secondary" (click)="sysLogin()">Admin</button>
+                      <button type="button" class="btn btn-warning btn-secondary" (click)="bhcoLogin()">Social Worker</button>
+                      <button type="button" class="btn btn-success btn-secondary" (click)="cmemberLogin()">Community Member</button>
                     </div>
-
+                  </div>
                 </form>
             </div>
         </div>
